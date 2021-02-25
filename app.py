@@ -1,4 +1,4 @@
-import cv2
+# import cv2
 import streamlit as st
 # import face_recognition
 import pandas as pd
