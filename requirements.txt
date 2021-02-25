@@ -1,0 +1,8 @@
+wheel
+numpy
+pandas
+plotly
+opencv-contrib-python
+cmake
+dlib
+streamlit
