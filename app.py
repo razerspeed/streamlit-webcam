@@ -69,13 +69,13 @@ def capture_face(video_capture):
         return rgb_frame
 
 
-if __name__ == "__main__":
-    c=True
-    while(c):
-        video_capture = cv2.VideoCapture(WEBCAMNUM)
-        frame = capture_face(video_capture)
-        FRAME_WINDOW.image(frame)
 
-        if button:
-            c=False
-    st.write('contunue......')
+c=True
+while(c):
+    video_capture = cv2.VideoCapture(WEBCAMNUM)
+    frame = capture_face(video_capture)
+    FRAME_WINDOW.image(frame)
+
+    if button:
+        c=False
+st.write('contunue......')
