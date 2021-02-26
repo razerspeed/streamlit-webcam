@@ -1,4 +1,4 @@
-# import cv2
+import cv2
 import streamlit as st
 import requests
 import pandas as pd
@@ -14,23 +14,23 @@ st.write("asdasdasd")
 # import pandas as pd
 # import numpy as np
 
-# def check_webcam():
-#     webcam_dict = dict()
-#     camera_number=None
-#     for i in range(0, 5):
-#         cap = cv2.VideoCapture(i)
-#         is_camera = cap.isOpened()
-#         if is_camera:
-#             webcam_dict[f"index[{i}]"] = "VALID"
-#             cap.release()
-#             camera_number = i
-#         else:
-#             webcam_dict[f"index[{i}]"] = None
+def check_webcam():
+    webcam_dict = dict()
+    camera_number=None
+    for i in range(0, 5):
+        cap = cv2.VideoCapture(i)
+        is_camera = cap.isOpened()
+        if is_camera:
+            webcam_dict[f"index[{i}]"] = "VALID"
+            cap.release()
+            camera_number = i
+        else:
+            webcam_dict[f"index[{i}]"] = None
 
-#     return webcam_dict,camera_number
+    return webcam_dict,camera_number
 
-# st.title('WebCam index validation check')
-# webcam_dict,camera_number = check_webcam()
+st.title('WebCam index validation check')
+webcam_dict,camera_number = check_webcam()
 
 
 # st.write(webcam_dict)
